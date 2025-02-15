@@ -1,0 +1,45 @@
+body {
+  @apply bg-background dark:bg-background-dark text-primary min-h-screen;
+  font-family: "Roboto";
+}
+
+a,
+button {
+  @apply transition-all duration-300 hover:text-teal-500;
+}
+
+.text-primary {
+  @apply text-gray-900 dark:text-white;
+}
+
+.text-secondary {
+  @apply text-gray-500 dark:text-gray-300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold text-gray-900 dark:text-white;
+}
+
+.card {
+  @apply transition-transform duration-300 hover:scale-105 p-6 rounded-2xl shadow-lg bg-white/40 dark:bg-secondary-dark/50 border-gray-300 border dark:border-gray-700;
+}
+
+.tag {
+  @apply inline-block px-3 py-1 text-sm bg-gray-200 dark:bg-gray-800 rounded-full text-secondary mr-2 mt-2;
+}
+
+.btn-primary {
+  @apply flex items-center bg-teal-500 dark:bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg hover:bg-opacity-90 hover:text-white;
+}
+
+.btn-secondary {
+  @apply flex items-center border border-teal-500 dark:text-white text-teal-500 dark:border-teal-600 px-6 py-3 rounded-lg font-semibold dark:hover:text-teal-500 hover:shadow-lg;
+}
+
+.nav-link {
+  @apply hover:text-teal-500 transition-colors duration-300;
+}
+
+.router-link-active {
+  @apply text-teal-500;
+}
