@@ -4,20 +4,23 @@ const { data } = await useFetch(
 );
 
 const projects = computed(() => {
+  if (!data.value) return [];
+
   return data.value
-    ? data.value
-        .filter((repo) => repo.description)
-        .map((repo) => ({
-          id: repo.id,
-          title: repo.name,
-          description: repo.description,
-          tags: [repo.language, ...repo.topics],
-          github: repo.html_url,
-          demo: repo.homepage,
-          timestamp: Date.parse(repo.created_at),
-        }))
-        .sort((a, b) => b.timestamp - a.timestamp)
-    : [];
+    .filter((repo) => repo.description)
+    .map((repo) => ({
+      id: repo.id,
+      title: repo.name,
+      description: repo.description,
+      tags: [
+        ...(repo.language ? [repo.language] : []),
+        ...(Array.isArray(repo.topics) ? repo.topics : []),
+      ],
+      github: repo.html_url,
+      demo: repo.homepage,
+      timestamp: Date.parse(repo.created_at),
+    }))
+    .sort((a, b) => b.timestamp - a.timestamp);
 });
 </script>
 <template>
