@@ -24,9 +24,7 @@
 </template>
 
 <script setup>
-const route = useRoute();
 const { data: page } = await useAsyncData("blog", () =>
   queryCollection("blog").all()
 );
-console.log(page);
 </script>
