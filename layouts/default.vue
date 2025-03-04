@@ -3,12 +3,12 @@
     <header class="sticky top-0 shadow-lg z-50 backdrop-blur">
       <Menu />
     </header>
-    <main class="relative">
+    <main class="relative h-screen">
       <div
         class="absolute inset-0 -z-10 transform-gpu blur-3xl overflow-hidden"
       >
         <div
-          class="aspect-[1.7] h-full w-full bg-gradient-to-r from-teal-500 to-white/10 dark:to-black/10 opacity-50 lg:opacity-30 xs:opacity-50 hero-bg-effect"
+          class="aspect-[1.7] h-full w-full bg-gradient-to-br from-teal-500 via-white/20 to-white/5 dark:via-gray-900/20 dark:to-black/30 opacity-50 lg:opacity-40 xs:opacity-50 hero-bg-effect"
         ></div>
       </div>
       <div class="max-w-7xl mx-auto px-6 py-12">
@@ -20,22 +20,22 @@
 <style scoped>
 .hero-bg-effect {
   clip-path: polygon(
-    66% 56%,
-    32% 5%,
-    0% 8%,
+    65% 50%,
+    30% 5%,
+    5% 12%,
     98% 77%,
-    87% 65%,
-    35% 62%,
-    30% 78%,
-    62% 58%,
-    95% 87%,
-    86% 106%,
-    25% 42%,
-    22% 1%,
-    27% 39%,
-    79% 38%,
-    48% 110%,
-    69% 81%
+    85% 60%,
+    40% 55%,
+    33% 75%,
+    60% 52%,
+    90% 88%,
+    80% 105%,
+    22% 45%,
+    20% 5%,
+    25% 38%,
+    78% 40%,
+    48% 108%,
+    66% 79%
   );
 }
 </style>

@@ -8,7 +8,7 @@
     />
     <div class="p-4">
       <h3 class="text-xl font-semibold">{{ title }}</h3>
-      <p class="text-secondary mt-2">{{ description }}</p>
+      <p class="text-secondary-color mt-2">{{ description }}</p>
       <div class="tags mt-3">
         <span v-for="tag in tags" :key="tag" class="tag">{{ tag }}</span>
       </div>
