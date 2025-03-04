@@ -27,9 +27,3 @@ defineProps({
   to: String,
 });
 </script>
-
-<style scoped>
-/* .tags .tag {
-  @apply inline-block px-3 py-1 text-sm bg-gray-200 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-300 mr-2 mt-2;
-} */
-</style>
