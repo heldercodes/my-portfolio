@@ -1,9 +1,11 @@
 <template>
-  <div class="card">
-    <h3 class="text-xl font-semibold">{{ title }}</h3>
-    <p class="text-secondary-color mt-2">{{ description }}</p>
-    <div class="tags mt-3">
-      <span v-for="tag in tags" :key="tag" class="tag">{{ tag }}</span>
+  <div class="card flex flex-col min-h-[300px]">
+    <div class="flex-grow">
+      <h3 class="text-xl font-semibold">{{ title }}</h3>
+      <p class="text-secondary-color mt-2">{{ description }}</p>
+      <div class="tags mt-3">
+        <span v-for="tag in tags" :key="tag" class="tag">{{ tag }}</span>
+      </div>
     </div>
     <div class="links mt-4 flex flex-wrap justify-center md:flex-nowrap gap-3">
       <NuxtLink :to="github" target="_blank" class="btn-secondary min-w-32 justify-center">

@@ -1,20 +1,21 @@
 <template>
-  <div>
+  <div class="min-h-screen flex flex-col">
     <header class="sticky top-0 shadow-lg z-50 backdrop-blur">
       <Menu />
     </header>
-    <main class="relative h-screen">
+    <main class="flex-grow relative">
       <div
         class="absolute inset-0 -z-10 transform-gpu blur-3xl overflow-hidden"
       >
         <div
-          class="aspect-[1.7] h-full w-full bg-gradient-to-br from-teal-500 via-white/20 to-white/5 dark:via-gray-900/20 dark:to-black/30 opacity-50 lg:opacity-40 xs:opacity-50 hero-bg-effect"
+          class="aspect-[1.7] h-full w-full bg-gradient-to-br from-teal-500 via-white/40 to-white/10 dark:via-gray-900/20 dark:to-black/30 opacity-60 lg:opacity-50 xs:opacity-60 hero-bg-effect"
         ></div>
       </div>
       <div class="max-w-7xl mx-auto px-6 py-12">
         <slot />
       </div>
     </main>
+    <Footer />
   </div>
 </template>
 <style scoped>

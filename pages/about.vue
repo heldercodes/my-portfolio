@@ -163,7 +163,7 @@
       <h2 class="title mb-5">📩 Let’s Connect!</h2>
       <p>
         I’m always up for a chat about tech, new projects, or just sharing
-        ideas. Feel free to reach out via GitHub, LinkedIn, or Twitter!
+        ideas. Feel free to reach out via my social links!
       </p>
     </div>
   </section>
