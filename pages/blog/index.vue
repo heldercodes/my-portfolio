@@ -8,23 +8,23 @@
     </p>
 
     <!-- Blog Grid -->
-    <!-- <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       <BlogCard
-        v-for="article in page"
-        :key="article._path"
+        v-for="article in articles"
+        :key="article.path"
         :title="article.title"
         :description="article.description"
         :tags="article.meta.tags"
         :image="article.meta.image"
         :readingTime="article.meta.readingTime"
-        :to="article._path"
+        :to="article.path"
       />
-    </div> -->
+    </div>
   </section>
 </template>
 
 <script setup>
-const { data: page } = await useAsyncData("blog", () =>
+const { data: articles } = await useAsyncData("blog", () =>
   queryCollection("blog").all()
 );
 </script>
