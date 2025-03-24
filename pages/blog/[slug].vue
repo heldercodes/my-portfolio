@@ -1,7 +1,8 @@
 <template>
   <article class="max-w-3xl mx-auto px-6 py-12 prose dark:prose-invert prose-pre:bg-white prose-pre:text-gray-700">
+    <NuxtLink to="/blog" class="inline-block mb-8 text-secondary-color hover:text-primary-color">← Back to Blog</NuxtLink>
     <template v-if="page">
-      <div class="mt-8">
+      <div class="mt-4">
         <ContentRenderer :value="page" />
       </div>
     </template>
